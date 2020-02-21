@@ -3,7 +3,7 @@ import csv
 from dbfread import DBF
 import os
 
-def mode1():
+def mode1(): #converting DBF files to CSV files in bulk
     start = str(input("Start: "))
     end = int(input("End: "))
     i = 1
@@ -23,7 +23,7 @@ def mode1():
         count += 1
         i += 1
 
-def mode2():
+def mode2(): #renumbering DBF files from 1
     i = 1
     for filename in os.listdir("."):
         if filename.endswith("dbf"):
