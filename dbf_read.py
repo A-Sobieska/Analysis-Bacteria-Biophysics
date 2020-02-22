@@ -1,5 +1,5 @@
 """
-Converting .dbf files to .csv in bulk for plate reader Fluorostar
+Converting .dbf files to .csv in bulk for plate reader Fluostar
 
 Adapted from https://dbfread.readthedocs.io/en/latest/exporting_data.html
 """
