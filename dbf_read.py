@@ -47,4 +47,5 @@ def main():
     elif mode == 2:
         mode2()
 
-main()
+if __name__ == "__main__":
+    main()
