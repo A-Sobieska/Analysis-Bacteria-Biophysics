@@ -201,7 +201,7 @@ def findSlope(filestart, fileend, row):
         well, time = Fluostar(filestart, fileend, row)
 
     #uncertainty method taken from https://stackoverflow.com/questions/27634270/how-to-find-error-on-slope-and-intercept-using-numpy-polyfit
-    slope, intercept = np.polyfit(time1, well1, 1, cov=True)
+    slope, intercept = np.polyfit(time, well, 1, cov=True)
     print "speed: {} +/- {}".format(slope[0], np.sqrt(intercept[0][0]))
 
 def mode1(path_directory):
